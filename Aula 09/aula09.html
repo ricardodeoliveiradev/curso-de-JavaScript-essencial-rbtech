@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 09 - JS</title>
+</head>
+<body>
+  <h1 id="demo" onmouseover="funcao1(this)" onmouseout="funcao2(this)">Passe o mouse aqui!</h1>
+    <script>
+    //    document.getElementById('demo').innerHTML = 'Texto do meu parágrafo'; 
+    // console.log(document.getElementsByTagName('p'));
+    // var x = (document.getElementsByClassName('exemplo'));
+    // var x = document.querySelectorAll('div.exemplo');
+    /*
+    document.baseURI / document.body / document.doctype / document.documentURI / document.domain / dozument.head
+    document.inputEnconding / document.lastModified / document.title / document.URL / document.forms 
+    document.links / documents.images / documents.scripts
+    */
+    // document.write('Isso é um teste');
+    // document.getElementById('imagem').alt = 'Botafogo';
+    // document.getElementById('imagem').style.color = 'blue';
+    function funcao1(elemento){
+       elemento.innerHTML = 'Ok, mouse sobre o elemento!';
+    }
+    function funcao2(elemento){
+        elemento.innerHTML = 'Passe o mouse aqui!'
+    }
+    // document.getElementById('demo').onclick = funcao;
+    /*
+    onclick / onload / onchange / onmouseover / onmouseout / onfocus / onmousedown / onmouseup
+    */
+    </script>
+</body>
+</html>

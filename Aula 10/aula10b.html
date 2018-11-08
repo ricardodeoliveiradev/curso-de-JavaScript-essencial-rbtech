@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 10 - JS</title>
+</head>
+<body>
+    <div id="msg">
+
+    </div>
+    <input type="button" value="Cancelar" onclick="clearTimeout(msg)"/>
+    <input type="button" value="Voltar" onclick=""/>    
+    <script>
+        // window.localStorage.setItem('nome', 'Ricardo');
+        // window.sessionStorage.setItem('nome2', 'Roberto');
+        // document.getElementById('msg').innerHTML = window.sessionStorage.getItem('nome2');
+        // var janela = window.open('', '', 'width=500', 'heigth=400');
+        // janela.document.write('Isso é um texto para minha janela popup');
+        // janela.opener.document.write('Isso é um texto para minha janela principal');
+        // var msg = setTimeout(msgtimeout, 1000);
+        // var msg = setInterval(msginterval, 5000);
+        var intervalo = setInterval(verificaFoco, 1000);
+        var contador = 0; 
+        function verificaFoco(){
+            if(document.hasFocus()){
+                contador++,
+                console.log(contador);
+                if(contador >= 10){
+                    msgtimeout();
+                    clearInterval(intervalo);
+                }
+            }
+        }
+        function msgtimeout(){
+            document.getElementById('msg').innerHTML = 'Obrigado por visitar minha página';
+        }
+        // function msginterval(){
+        //     alert('Msg via interval');
+        // }
+    </script>
+</body>
+</html>

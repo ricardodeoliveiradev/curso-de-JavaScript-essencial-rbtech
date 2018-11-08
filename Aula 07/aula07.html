@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 07 - JS</title>
+</head>
+<body>
+    <script>
+        //ESTRUTURAS DE CONTROLE E REPETIÇÃO
+        
+        /*
+        Operadores de comparação:
+         == igual a
+         === igual em valor e tipo
+         != diferente de  
+         !== diferente em valor e tipo
+         > maior que
+         < menor que
+         >= maior ou igual
+         <= menor ou igual
+        
+        Operadores lógicos:
+         && (Se uma condição e outra forem verdadeiras)
+         || ou
+         ! não
+
+        Operador ternário - Serve pra atribuir um valor de acordo com um teste lógico na própria atribuição da variável.
+         Exemplo:
+         var idade = 20;
+         var situacao = (idade >= 18) ? 'Maioridade':'Menor'; ('verdade' : 'falso')
+         alert(situacao);
+        : (dois pontos) significa E CASO. No exemplo acima seria: Se for maior ou igual a 18 anos 'Maioridade e caso(:) for menor 'Menor'.
+        */
+       //Operador ternário:
+        // var idade = 20;
+        // var situacao = (idade >= 18) ? 'Maioridade':'Menor';
+        // alert(situacao);
+        //Operador de comparação:
+        // var n = 11;
+        // if(n > 5 && n < 10){
+        //     alert('Primeira condição é verdadeira');
+        // } else if (n == 5){
+        //     alert('Segunda condição é verdadeira');
+        // }
+        //  else{
+        //     alert('Condição falsa');
+        // }
+        
+        /*
+        ESTRUTURA SWITCH:
+        switch(){
+            case condicaoa:
+            codigo
+            break;
+        default:
+            codigo    
+        }
+        */
+    //    var diasemana = new Date().getDay();
+    //    switch (diasemana){
+    //        case 6:
+    //             alert('Hoje é sábado #partiubalada');
+    //             break;
+    //        case 0:   
+    //             alert('Hoje é domingo #curandoaressaca');
+    //        default:
+    //             alert('Dia normal: trabalho + estudo');       
+    //    }
+
+        
+        //ESTRUTURA DE REPETIÇÃO:
+        
+        // var linguagens = ['PHP', 'JAVA', 'C++', 'ASP', 'DELPHI'];
+        // for(contador=0; contador<linguagens.length; contador++){
+        //     if(contador == 2)break;
+        //     console.log(linguagens[contador]);
+        //     alert(linguagens[contador]);
+        // }
+
+        var contador = 0;
+        var linguagens = ['pera', 'uva', 'maçã', 'salada mista'];
+        // while(contador < linguagens.length){
+        //     console.log(linguagens[contador]);
+        //     contador++;
+        // }
+        do {
+            alert(linguagens[contador]);
+            contador++;
+        }while(contador < linguagens.length); 
+    </script>
+</body>
+</html>
